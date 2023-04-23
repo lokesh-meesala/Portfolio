@@ -4,6 +4,7 @@ import { AiOutlineInstagram } from "react-icons/ai";
 import { GiEarthAmerica } from "react-icons/gi";
 import { FaLinkedinIn } from "react-icons/fa";
 import { Slide } from "react-awesome-reveal";
+import Text from "./Text";
 
 const ProfComponent = () => {
   return (
@@ -11,15 +12,10 @@ const ProfComponent = () => {
       <Slide direction="left">
         <Texts>
           <h4>
-            Hello <span className="green">I'am</span>
+            Hello <span className="green"></span>
           </h4>
-          <h1 className="green">Milad Amiri</h1>
-          <h3>UX/UI Designer and graphic designer</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
-            iusto. Adipisci in qui officia provident tenetur sequi, deserunt
-            corporis quos?
-          </p>
+          <h1 className="green">I'am Lokesh Meesala</h1>
+          <Text/>
           <button>Let's talk</button>
           <Social>
             <p>Check out my</p>

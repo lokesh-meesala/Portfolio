@@ -24,8 +24,12 @@ body{
 
 .green {
   color: #01be96;
+  margin-bottom: 10px;
 }
-
+.typeWriterText{
+  font-size: 20px;
+  color: #be9b0180;
+}
 .slick-list, .slick-slider, .slick-track{
   padding: 1.5rem 0;
 }
