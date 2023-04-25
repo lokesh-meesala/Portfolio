@@ -4,18 +4,12 @@ import {IoIosQuote} from "react-icons/io";
 import {AiOutlineStar} from "react-icons/ai";
 
 const ClientSlider = (props) => {
-    const {name, position, img_url, stars, disc} = props.item;
+    const {name, position, img_url, disc} = props.item;
   return (
     <Container>
         <Header>
             <span className='quote'><IoIosQuote/></span>
-            <div>
-                {Array(stars).fill().map((_, i) => (
-                    <span className='star' key={i}>
-                        <AiOutlineStar/>
-                    </span>
-                ))}
-            </div>
+
         </Header>
         <Body>
             {disc}
@@ -37,6 +31,7 @@ const Container = styled.div`
     background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
     padding: 1.5rem 1rem;
     margin: 0 1rem;
+    text-align: center;
 `
 
 const Header = styled.div`

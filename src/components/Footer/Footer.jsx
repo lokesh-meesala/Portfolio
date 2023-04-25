@@ -4,7 +4,7 @@ import { MdAlternateEmail } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
-import { BsFacebook, BsSlack } from "react-icons/bs";
+import { BsFacebook, BsInstagram, BsSlack } from "react-icons/bs";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
 import { Slide, Zoom, Fade } from "react-awesome-reveal";
 
@@ -19,14 +19,15 @@ const Footer = () => {
     <Container id="footer">
       <Profile>
         <Slide direction="left" delay={1}>
-          <h1>Portfolio</h1>
+          <h1>Get In Touch</h1>
         </Slide>
         <div className="address">
           <Slide direction="left">
-            <h1>Address:</h1>
-          </Slide>
-          <Slide direction="left">
-            <p>1030 Southwood Dr San Luis Obispo, California(CA), 93401</p>
+           <p>
+I’m currently searching for opportunities for Full stack Developer, Software Engineer and Python Developer roles.
+If there is any vacancy my inbox is always open. Whether
+you have any further questions or just want to say hi,
+I’ll try my best to get back to you!</p>
           </Slide>
         </div>
         <div className="links">
@@ -34,21 +35,13 @@ const Footer = () => {
             <h1>Contact me directly:</h1>
           </Slide>
           <div>
-            <span>
-              <FiPhoneCall />
-            </span>
-            <Slide direction="left">
-              <a href="tel:+4733378901">+47 333 78 901</a>
-            </Slide>
-          </div>
-          <div>
             <Slide direction="left">
               <span>
                 <HiOutlineMailOpen />
               </span>
             </Slide>
             <Slide>
-              <a href="mailto:miladamiri@gmail.com">miladamiri@gmail.com</a>
+              <a href="mailto:lokeshmeeesala248@gmail.com">lokeshmeeesala248@gmail.com</a>
             </Slide>
           </div>
         </div>
@@ -59,14 +52,14 @@ const Footer = () => {
           <div className="icons">
             <Zoom>
               <span>
-                <a href="/">
+                <a href="https://github.com/lokim99?tab=repositories">
                   <AiFillGithub />
                 </a>
               </span>
             </Zoom>
             <Zoom>
               <span>
-                <a href="/">
+                <a href="https://www.linkedin.com/in/lokeshmeesala/">
                   <AiFillLinkedin />
                 </a>
               </span>
@@ -74,14 +67,7 @@ const Footer = () => {
             <Zoom>
               <span>
                 <a href="/">
-                  <BsFacebook />
-                </a>
-              </span>
-            </Zoom>
-            <Zoom>
-              <span>
-                <a href="/">
-                  <BsSlack />
+                  <BsInstagram />
                 </a>
               </span>
             </Zoom>

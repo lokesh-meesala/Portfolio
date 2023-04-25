@@ -7,11 +7,15 @@ import styled from 'styled-components';
 let data = [
     {
         img : "https://res.cloudinary.com/ghazni/image/upload/v1661324124/Yt-portfolio/ui5_mnvdaw.png",
-        disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!"
+        role: "Fullstack Web Developer",
+        link:"https://github.com/arikaki/SE-project",
+        disc: "Developed a web application similar to Quora using React, Material UI, HTML/CSS, Golang, MongoDB and implemented the Authentication using Auth0.",
     },
     {
-        img : "https://res.cloudinary.com/ghazni/image/upload/v1661324074/Yt-portfolio/ui4_jku3ol.png",
-        disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!"
+        img : "https://res.cloudinary.com/ghazni/image/upload/v1661324124/Yt-portfolio/ui5_mnvdaw.png",
+        role: "Andriod Developer",
+        link:"https://github.com/lokim99/Courage-to-Change",
+        disc : "I have developed a application called Courage to change to help people overcome drug, alcohol abuse through behavioral change and Rewards where i worked on features like leaderboard, rewards, activity feed and Navigation Tab using SQLite"
     },
     {
         img : "https://res.cloudinary.com/ghazni/image/upload/v1661323981/Yt-portfolio/ui2_wtollo.png",

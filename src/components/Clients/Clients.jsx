@@ -4,40 +4,33 @@ import styled from 'styled-components'
 import ClientSlider from './ClientSlider';
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { Slide } from 'react-awesome-reveal';
+// import Wipro from "././images/Wipro.png";
 
 let clients = [
     {
-        name : "John Michel",
-        position : "web developer",
-        img_url : "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
-        stars : 3,
-        disc : `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`
+        name : "Wipro Technologies",
+        position : "Software Engineer",
+        img_url :"https://thumbs2.imgbox.com/b1/5b/Lk4bPgy1_t.png",
+        disc : `I have developed 30+ interfaces using Java in SAP PI and played an active role in all stages of the software development lifecycle includingRequirement gathering, Analysis, Development, Testing, Documentation and Deployment. I also resolved 90+ issues, service requests, incidents, performed root cause analysis on critical issues and contributed to server migrations `
     },
     {
-        name : "John Michel",
-        position : "web developer",
-        img_url : "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
-        stars : 4,
-        disc : `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`
+        name : "Virtual Review Assist Inc",
+        position : "Python & ML Developer",
+        img_url : "https://thumbs2.imgbox.com/21/c4/gqXbK3qk_t.png",
+        disc : `I have developed image processing algorithms using Python and Linux to enhance processing of compliance issues in construction documents, resulting in an 80% reduction in time. I also authored the Optical Character Recognition code to extract text from images, reducing manual workload by 75%. Additionally, I implemented machine learning algorithms for identifying and extracting information from tables reducing time from days to minutes`
     },
     {
-        name : "John Michel",
-        position : "web developer",
-        img_url : "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
-        stars : 5,
-        disc : `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`
+        name : "Virtual Review Assist Inc",
+        position : "Backend Developer",
+        img_url : "https://thumbs2.imgbox.com/21/c4/gqXbK3qk_t.png",
+        disc : `I had developed 20+ REST APIs using Python and MongoDB as the database and integrated them seamlessly into Django. I also developed and trained a chatbot to handle common questions related to Florida Building Resident Codes.
+        
+        
+        
+        
+        `
     },
-    {
-        name : "John Michel",
-        position : "web developer",
-        img_url : "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
-        stars : 5,
-        disc : `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`
-    },
+    
 ]
 var settings = {
     dots: true,
@@ -81,10 +74,10 @@ const Clients = () => {
         <ClientSlider item={item} key={i}/>
     ))
   return (
-    <Container id='client'>
+    <Container id='skills'>
         <Slide direction="left">
-            <span className="green">testimonials</span>
-            <h1>what clients say</h1>
+            <span className="green">Work Experience</span>
+            <h1>Where I worked</h1>
         </Slide>
         <Testimonials>
             <Slider ref={arrowRef} {...settings}>

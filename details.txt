@@ -1,6 +1,6 @@
-Hello I'am
-Milad Amiri
-UX/UI Designer And Graphic Designer
+Hello 
+I'am Lokesh Meesala
+Full Stack web Developer, Software Engineer, and Python Developer
 
 ## colors
 green : #01be96

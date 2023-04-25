@@ -5,6 +5,7 @@ import { GiEarthAmerica } from "react-icons/gi";
 import { FaLinkedinIn } from "react-icons/fa";
 import { Slide } from "react-awesome-reveal";
 import Text from "./Text";
+import profilephoto from './IMG-3451.jpg'
 
 const ProfComponent = () => {
   return (
@@ -42,7 +43,7 @@ const ProfComponent = () => {
       <Slide direction="right">
         <Profile>
           <img
-            src="https://res.cloudinary.com/ghazni/image/upload/v1659082282/Yt-portfolio/Untitled-1_drcspz.png"
+            src={profilephoto} 
             alt="profile"
           />
         </Profile>
@@ -143,13 +144,20 @@ const Social = styled.div`
 `;
 const Profile = styled.div`
   img {
-    width: 25rem;
+    position: relative;
+    width: 20%;
+    height: 30%;
+    float: right;    
     filter: drop-shadow(0px 10px 10px #01be9570);
     transition: transform 400ms ease-in-out;
     @media (max-width: 790px) {
       width: 20rem;
     }
+    .prof{
+      width: 30%;
+      height: 30%;
 
+    }
     @media (max-width: 660px) {
       width: 18rem;
     }
