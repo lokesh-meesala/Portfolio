@@ -3,16 +3,17 @@ import Slider from 'react-slick';
 import Project from './Project';
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import styled from 'styled-components';
+import full from './Full.png';
 
 let data = [
     {
-        img : "https://res.cloudinary.com/ghazni/image/upload/v1661324124/Yt-portfolio/ui5_mnvdaw.png",
+        img : "https://www.inewsten.com/wp-content/uploads/2023/04/What-Is-Full-Stack-Web-Development.png",
         role: "Fullstack Web Developer",
         link:"https://github.com/arikaki/SE-project",
         disc: "Developed a web application similar to Quora using React, Material UI, HTML/CSS, Golang, MongoDB and implemented the Authentication using Auth0.",
     },
     {
-        img : "https://res.cloudinary.com/ghazni/image/upload/v1661324124/Yt-portfolio/ui5_mnvdaw.png",
+        img : "https://goobar.b-cdn.net/wp-content/uploads/2021/03/android_category_thumbnail.png",
         role: "Andriod Developer",
         link:"https://github.com/lokim99/Courage-to-Change",
         disc : "I have developed a application called Courage to change to help people overcome drug, alcohol abuse through behavioral change and Rewards where i worked on features like leaderboard, rewards, activity feed and Navigation Tab using SQLite"

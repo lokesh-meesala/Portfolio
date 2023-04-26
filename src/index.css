@@ -25,6 +25,7 @@ body{
 .green {
   color: #01be96;
   margin-bottom: 10px;
+  width: auto;
 }
 .typeWriterText{
   font-size: 20px;

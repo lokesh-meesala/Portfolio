@@ -6,15 +6,17 @@ const Header = () => {
     const [bar, setBar] = useState(false);
   return (
     <Container bar={bar}>
-        <Logo>
+        <Logo className='bar'>
             <span className='green'><GiCandleFlame/></span>
-            <h1>Portfolio</h1>
+            
+            <span className='green'><a href="#home"><h1>Lokesh Meesala</h1></a></span>
+            
         </Logo>
         <Nav bar={bar}>
             <span><a href="#home">Home</a></span>
             <span><a href="#about">About</a></span>
             <span><a href="#project">Projects</a></span>
-            <span><a href="#skills">Skills</a></span>
+            <span><a href="#skills">Work Experience</a></span>
             <span><a href="#footer">Contact</a></span>
         </Nav>
         <div
@@ -91,7 +93,8 @@ const Logo = styled.div`
 
     h1{
         font-weight: 600;
-        font-size: 1.2rem;
+        font-size: 1.8rem;
+        font-color: #01be96;
     }
 `
 const Nav = styled.div`

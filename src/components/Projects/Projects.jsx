@@ -38,6 +38,7 @@ const Container = styled.div`
         margin: 0 auto;
         padding: 1rem 0;
         font-size: 0.9rem;
+        padding-bottom: 100px
         @media(max-width : 500px){
             width: 90%;
         }

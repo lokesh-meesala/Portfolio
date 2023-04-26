@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { AiOutlineInstagram } from "react-icons/ai";
-import { GiEarthAmerica } from "react-icons/gi";
-import { FaLinkedinIn } from "react-icons/fa";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { Slide } from "react-awesome-reveal";
 import Text from "./Text";
 import profilephoto from './IMG-3451.jpg'
@@ -13,27 +12,29 @@ const ProfComponent = () => {
       <Slide direction="left">
         <Texts>
           <h4>
-            Hello <span className="green"></span>
+            Hello
           </h4>
           <h1 className="green">I'am Lokesh Meesala</h1>
           <Text/>
-          <button>Let's talk</button>
+          <a href="https://drive.google.com/file/d/1qqYl8Au5-mDAWIChkj8ugOLWZXTRXuYN/view?usp=share_link" target="blank">
+          <button>Resume</button>
+          </a>
           <Social>
             <p>Check out my</p>
             <div className="social-icons">
               <span>
-                <a href="/">
+                <a href="/" target="blank">
                   <AiOutlineInstagram />
                 </a>
               </span>
               <span>
-                <a href="/">
-                  <GiEarthAmerica />
+                <a href="https://github.com/lokim99?tab=repositories" target="blank">
+                  <AiFillGithub />
                 </a>
               </span>
               <span>
-                <a href="/">
-                  <FaLinkedinIn />
+                <a href="https://www.linkedin.com/in/lokeshmeesala/" target="blank">
+                  <AiFillLinkedin />
                 </a>
               </span>
             </div>
@@ -59,13 +60,12 @@ const Container = styled.div`
   gap: 2rem;
   padding-top: 3rem;
   width: 80%;
-  max-width: 1280px;
+  max-width: 1600px;
   margin: 0 auto;
   z-index: 1;
   @media (max-width: 840px) {
     width: 90%;
   }
-
   @media (max-width: 640px) {
     flex-direction: column;
   }
@@ -89,6 +89,7 @@ const Texts = styled.div`
   }
   p {
     font-weight: 300;
+    
   }
 
   button {
@@ -144,19 +145,15 @@ const Social = styled.div`
 `;
 const Profile = styled.div`
   img {
+    padding-left: 400px;
     position: relative;
-    width: 20%;
-    height: 30%;
-    float: right;    
+    // width: 399px;
+    height: 401px;
+        
     filter: drop-shadow(0px 10px 10px #01be9570);
     transition: transform 400ms ease-in-out;
     @media (max-width: 790px) {
       width: 20rem;
-    }
-    .prof{
-      width: 30%;
-      height: 30%;
-
     }
     @media (max-width: 660px) {
       width: 18rem;

@@ -11,7 +11,7 @@ const Project = (props) => {
             <h3>{role}</h3>
         {/* </div> */}
             <p>{disc}
-            <a href={link} target="_blank">demo</a>
+            <a href={link} target="_blank">Demo</a>
             </p>
         </div>
     </Container>
@@ -42,15 +42,15 @@ const Container = styled.div`
         bottom: -10rem;
         text-align: left;
         padding: 0.5rem;
+        color: ;
         background: linear-gradient(rgba(0,0,0, 0.100), rgba(0,0,0, 0.80));
         transition: all 400ms ease-in-out;
         h1{
             font-size: 1rem;
         }
         h3{
-            
-            font-size: 1.2rem;
             color: #fff;
+            font-size: 1.2rem;
             text-align: top;
             margin-top: 0.5rem;
             margin-left: 0;
@@ -59,7 +59,7 @@ const Container = styled.div`
             width: 90%;
             font-size: 0.8rem;
             a{
-                margin-left: 0;
+                margin-left: 10px;
                 color: red;
             }
         }

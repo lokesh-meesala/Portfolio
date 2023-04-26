@@ -52,21 +52,21 @@ I’ll try my best to get back to you!</p>
           <div className="icons">
             <Zoom>
               <span>
-                <a href="https://github.com/lokim99?tab=repositories">
+                <a href="https://github.com/lokim99?tab=repositories" target="blank">
                   <AiFillGithub />
                 </a>
               </span>
             </Zoom>
             <Zoom>
               <span>
-                <a href="https://www.linkedin.com/in/lokeshmeesala/">
+                <a href="https://www.linkedin.com/in/lokeshmeesala/" target="blank">
                   <AiFillLinkedin />
                 </a>
               </span>
             </Zoom>
             <Zoom>
               <span>
-                <a href="/">
+                <a href="/" target="blank">
                   <BsInstagram />
                 </a>
               </span>
