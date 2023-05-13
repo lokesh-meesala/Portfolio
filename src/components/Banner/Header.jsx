@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import styled from 'styled-components';
 import { GiCandleFlame } from "react-icons/gi";
 
+
 const Header = () => {
     const [bar, setBar] = useState(false);
   return (
@@ -28,6 +29,10 @@ const Header = () => {
   )
 }
 
+
+
+
+
 export default Header
 
 const Container = styled.div`
@@ -48,6 +53,7 @@ const Container = styled.div`
     }
     @media(max-width:640px){
         .bars{
+            
             width: 40px;
             height: 40px;
             position: relative;
@@ -97,9 +103,15 @@ const Logo = styled.div`
         font-color: #01be96;
     }
 `
+
+
 const Nav = styled.div`
+
+
     @media(max-width:640px){
         position: fixed;
+        top: ${props => props.bar ? "60px" : "-100px"};
+        left: 0;
         display: flex;
         flex-direction: column;
         background-color: #01be96;
@@ -109,14 +121,17 @@ const Nav = styled.div`
         font-size: 2rem;
         gap: 2rem;
         font-weight: 700;
-        height: ${props => props.bar ? "100vh" : 0};
-        transition: height 400ms ease-in-out;
+        height: ${props => props.bar ? "calc(100vh - 60px)" : 0};
+        transition: all 400ms ease-in-out;
         overflow: hidden;
         z-index: 100;
     }
     span{
+        
         margin-left: 1rem;
+        
         a{
+            position: fixed;
             color: #fff;
             text-decoration: none;
             font-weight: 400;
@@ -142,4 +157,4 @@ const Nav = styled.div`
             }
         }
     }
-`
+`;

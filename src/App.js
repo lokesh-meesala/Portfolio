@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import Header from "./components/Banner/Header";
 import ProfComponent from "./components/Banner/ProfComponent";
-import Clients from "./components/Clients/Clients";
 import Footer from "./components/Footer/Footer";
 import Projects from "./components/Projects/Projects";
 import Services from "./components/About/Services";
+import Experience from "./components/Clients/workexp";
+import Skills from "./components/Skills/Skills";
 function App() {
   return (
     <Container>
@@ -13,10 +14,11 @@ function App() {
         <ProfComponent />
       </Banner>
       <Services />
+      <Skills/>
       <LightColor>
         <Projects />
       </LightColor>
-      <Clients />
+      <Experience />
       <LightColor>
         <Footer />
       </LightColor>

@@ -42,7 +42,6 @@ const Container = styled.div`
         bottom: -10rem;
         text-align: left;
         padding: 0.5rem;
-        color: ;
         background: linear-gradient(rgba(0,0,0, 0.100), rgba(0,0,0, 0.80));
         transition: all 400ms ease-in-out;
         h1{
@@ -56,7 +55,7 @@ const Container = styled.div`
             margin-left: 0;
         }
         p{
-            width: 90%;
+            width: 100%;
             font-size: 0.8rem;
             a{
                 margin-left: 10px;
@@ -66,10 +65,8 @@ const Container = styled.div`
     }
 
     .role{
-        position:relative;  
-        right: 0;
-        left: 0;
-        bottom: -10rem;
+        position:absolute;  
+        // bottom: -10rem;
         text-align: left;
         padding: 0.5rem;
         background: linear-gradient(rgba(0,0,0, 0.100), rgba(0,0,0, 0.70));

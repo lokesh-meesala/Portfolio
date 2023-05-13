@@ -7,6 +7,9 @@ import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
 import { BsFacebook, BsInstagram, BsSlack } from "react-icons/bs";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
 import { Slide, Zoom, Fade } from "react-awesome-reveal";
+import { useState  } from 'react';
+import { Form, Alert} from 'react-bootstrap';
+import emailjs from '@emailjs/browser';
 
 const Footer = () => {
   const scrollUp = () => {
@@ -15,6 +18,31 @@ const Footer = () => {
       behavior: "smooth",
     });
   };
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const templateParams = {
+      user_name: name,
+      user_email: email,
+      message: message,
+    };
+    emailjs.send('service_dz7th9l', 'template_314f6tg', templateParams, 'n0OlYPdAqlO3saTcr')
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+        setName('');
+        setEmail('');
+        setMessage('');
+      setShowSuccessMessage(true);
+        setTimeout(() => setShowSuccessMessage(false), 5000); // hide success message after 5 seconds
+      }, (error) => {
+        console.log('FAILED...', error);
+      });
+  };
+
   return (
     <Container id="footer">
       <Profile>
@@ -28,6 +56,14 @@ I’m currently searching for opportunities for Full stack Developer, Software E
 If there is any vacancy my inbox is always open. Whether
 you have any further questions or just want to say hi,
 I’ll try my best to get back to you!</p>
+          </Slide>
+        </div>
+        <div className="address">
+          <Slide direction="left">
+            <h1>Address:</h1>
+          </Slide>
+          <Slide direction="left">
+            <p>Gainesville, Florida, USA, 32608 </p>
           </Slide>
         </div>
         <div className="links">
@@ -79,31 +115,38 @@ I’ll try my best to get back to you!</p>
           </ArrowUp>
         </Fade>
       </Profile>
-      <Form>
+      
+      <Form1>
         <Slide direction="right">
-          <form>
+        {showSuccessMessage && (
+        <Alert variant="success" onClose={() => setShowSuccessMessage(false)} dismissible color="#01be96">
+        Message Sent Successfully!!
+        </Alert>
+      )}
+
+          <Form onSubmit={handleSubmit}>
             <div className="name">
               <span>
                 <CgProfile />
               </span>
-              <input type="text" placeholder="Fullname..." />
+              <input type="text" placeholder="Fullname..." name="user_name" value={name} onChange={(e) => setName(e.target.value)}/>
             </div>
             <div className="email">
               <span>
                 <MdAlternateEmail />
               </span>
-              <input type="email" placeholder="Email..." />
+              <input type="email" placeholder="Email..." name="user_email"value={email} onChange={(e) => setEmail(e.target.value)} />
             </div>
             <div className="message">
               <span className="messageIcon">
                 <FiMail />
               </span>
-              <textarea cols="30" rows="10" placeholder="Message..."></textarea>
+              <textarea cols="30" rows="10" placeholder="Message..."name="message"value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
             </div>
-            <button>Submit</button>
-          </form>
+            <button type="submit" value="Send message" name="submit">Submit</button>
+          </Form>
         </Slide>
-      </Form>
+      </Form1>
     </Container>
   );
 };
@@ -214,7 +257,7 @@ const ArrowUp = styled.div`
     top: 16rem;
   }
 `;
-const Form = styled.div`
+const Form1 = styled.div`
   flex: 1;
   h1 {
     font-size: 1.3rem;
