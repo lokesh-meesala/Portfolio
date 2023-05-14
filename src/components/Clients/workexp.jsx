@@ -7,16 +7,17 @@ import "react-vertical-timeline-component/style.min.css";
 import {MdOutlineWork} from "react-icons/md";
 import {SiWipro,SiPython, SiMongodb} from "react-icons/si";
 import { motion } from "framer-motion";
-import { Container, Row } from 'react-bootstrap'
+import { Container,Row } from 'react-bootstrap';
+import styled from 'styled-components';
 import { Zoom } from "react-awesome-reveal";
 import wipro from "./Wipro.png";
 
 const Experience = () => (
     <>
-    <Container id='workexp'>
+    <Container id='workexp' style={{paddingTop:'1rem'}}>
       <Row style={{ textAlign:"center" ,paddingLeft:"50px"}}>
         <Zoom>
-        <h1 className="green">Work Experience</h1>
+        <h1 className="green" style={{paddingBottom:'1rem'}}>Work Experience</h1>
         </Zoom>
 
       </Row>
@@ -27,7 +28,8 @@ const Experience = () => (
         background-color: #4158d0;
       }
     `}</style>
-          <motion.div whileHover={{ scale: 0.95 }} whileTap={{ scale: 0.8 }}>
+          <motion.div whileHover={{ scale: 1.05 }}>  
+          {/* whileTap={{ scale: 0.8 } */}
 
           <VerticalTimelineElement
                 className="vertical-timeline-element--work"
@@ -94,8 +96,6 @@ const Experience = () => (
         </VerticalTimeline>
       </Row>
     </Container>
-    
-
         
     </>
 );
@@ -103,9 +103,12 @@ const Experience = () => (
 export default Experience;
 
 // const Container = styled.div`
-//   .heading1{
+// padding-top:3rem;
+// :hover{
+//   transform: scale(1.05);
+// }
 //     h1{
 //       font-size: 1.9rem;
 //     }
-//   }
+
 // `

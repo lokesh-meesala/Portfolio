@@ -16,8 +16,9 @@ const Header = () => {
         <Nav bar={bar}>
             <span><a href="#home">Home</a></span>
             <span><a href="#about">About</a></span>
+            <span><a href="#skills">Skills</a></span>
             <span><a href="#project">Projects</a></span>
-            <span><a href="#skills">Work Experience</a></span>
+            <span><a href="#workexp">Work Experience</a></span>
             <span><a href="#footer">Contact</a></span>
         </Nav>
         <div

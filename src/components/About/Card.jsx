@@ -2,12 +2,11 @@ import React from 'react'
 import styled from 'styled-components';
 
 const Card = (props) => {
-    const { Icon, disc, title } = props;
+    const { Icon, title } = props;
   return (
     <Container>
         <span className='green'><Icon/></span>
         <h1>{title}</h1>
-        <p>{disc}</p>
     </Container>
   )
 }

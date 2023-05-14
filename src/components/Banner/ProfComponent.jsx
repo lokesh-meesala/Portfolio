@@ -11,9 +11,9 @@ const ProfComponent = () => {
     <Container id="home">
       <Slide direction="left">
         <Texts>
-          <h4>
+          <h2>
             Hello
-          </h4>
+          </h2>
           <h1 className="green">I'am Lokesh Meesala</h1>
           <Text/>
           <a href="https://drive.google.com/file/d/1qqYl8Au5-mDAWIChkj8ugOLWZXTRXuYN/view?usp=share_link" target="blank">

@@ -46,11 +46,13 @@ var settings = {
     centerMode: true,
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 700,
     slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
     arrows : false,
+    autoplay: true,
+    infinite: true,
     responsive: [
       {
         breakpoint: 990,

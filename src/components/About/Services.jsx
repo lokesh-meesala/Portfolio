@@ -2,6 +2,7 @@ import React from "react";
 import { MdDesignServices } from "react-icons/md";
 import { FiCodesandbox } from "react-icons/fi";
 import { CgWebsite } from "react-icons/cg";
+import {FcLinux} from "react-icons/fc";
 import styled from "styled-components";
 import Card from "./Card";
 import { Slide } from "react-awesome-reveal";
@@ -22,21 +23,18 @@ const Services = () => {
           <Card
             Icon={MdDesignServices}
             title={"Full Stack Web Developer"}
-            // disc={`I am proficient in programming languages such as JavaScript, Python, GO and have experience building full-stack web applications using frameworks such as React, Node.js, and Django`}
           />
         </Slide>
         <Slide direction="up">
           <Card
             Icon={FiCodesandbox}
             title={"Software Engineer"}
-            disc={``}
           />
         </Slide>
         <Slide direction="right">
           <Card
             Icon={CgWebsite}
             title={"Python Developer"}
-            disc={``}
           />
         </Slide>
       </Cards>
