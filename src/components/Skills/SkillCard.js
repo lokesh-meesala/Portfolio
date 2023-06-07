@@ -12,7 +12,6 @@
 
 import React from "react";
 import styled from "styled-components";
-import "./Skills.css";
 const Card = (props) => {
   const { name } = props;
   return (

@@ -8,7 +8,6 @@ const Header = () => {
   return (
     <Container bar={bar}>
         <Logo className='bar'>
-            <span className='green'><GiCandleFlame/></span>
             
             <span className='green'><a href="#home"><h1>Lokesh Meesala</h1></a></span>
             
