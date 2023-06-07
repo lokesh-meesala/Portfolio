@@ -4,49 +4,59 @@
 //             <img src={props.img} className="w-20 max-h-20 mx-auto" alt={props.name}></img>
 //             <div className="mt-2">
 //                 <h1 className="font-bold md:text-xl">{props.name}</h1>
-                
+
 //             </div>
 //         </div>
 //     )
 // }
 
-import React from 'react'
-import styled from 'styled-components';
-
+import React from "react";
+import styled from "styled-components";
+import "./Skills.css";
 const Card = (props) => {
-    const { name } = props;
+  const { name } = props;
   return (
     <Container>
-        <span><img src={props.img}  alt={props.name} style={{alignItems:'center '}}></img ></span>
-        <h1>{name}</h1>
+      <span>
+        <img
+          alignItems="center"
+          src={props.img}
+          alt={props.name}
+          style={{ alignItems: "end" }}
+        ></img>
+      </span>
+      <h1>{name}</h1>
     </Container>
-  )
-}
+  );
+};
 
 export default Card;
 
 const Container = styled.div`
-    width: 95%;
-    height: 70%;
-    background:  #191923;
-    padding: 1rem;
-    text-align: center;
-    span{
-        font-size: 4rem;
-    }
-    
-    h1{
-        font-size: 1.2rem;
-        padding-bottom: 1rem;
-    }
+  width: 95%;
+  height: 70%;
+  background: #191923;
+  padding: 1rem;
+  text-align: center;
+  alignitems: center;
+  span {
+    font-size: 4rem;
+  }
 
-    p{
-        font-size: 0.8rem;
-    }
-    img {
-        width: 100px;
-        height: 110px;
-        align-items: center;
-     }
-        
-`
+  h1 {
+    font-size: 1.3rem;
+    padding-right: 0.5rem;
+    padding-bottom: 1rem;
+    alignitems: center;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+  img {
+    padding-left: 2.5rem;
+    alignself: center;
+    width: 150px;
+    height: 150px;
+  }
+`;

@@ -25,6 +25,7 @@ const Footer = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    alert("Message sent successfully!");
     const templateParams = {
       user_name: name,
       user_email: email,
