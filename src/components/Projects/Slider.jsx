@@ -3,8 +3,8 @@ import Slider from 'react-slick';
 import Project from './Project';
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import styled from 'styled-components';
-import full from './Full.png';
-import bitcoin from './bitcoin.png';
+
+
 
 let data = [
     {
@@ -17,7 +17,7 @@ let data = [
         img : "https://goobar.b-cdn.net/wp-content/uploads/2021/03/android_category_thumbnail.png",
         role: "Andriod Developer",
         link:"https://github.com/lokim99/Courage-to-Change",
-        disc : "I have developed a application called Courage to change to help people overcome drug, alcohol abuse through behavioral change and Rewards where i worked on features like leaderboard, rewards, activity feed and Navigation Tab using SQLite"
+        disc : "Developed a application called Courage to change to help people overcome drug, alcohol abuse through behavioral change and Rewards with features leaderboard, rewards, activity feed and Navigation Tab using SQLite"
     },
     {
         img : "https://bernardmarr.com/img/What%20is%20the%20Difference%20Between%20Blockchain%20And%20Bitcoin.png",
@@ -30,14 +30,14 @@ let data = [
         img : "https://i0.wp.com/9to5mac.com/wp-content/uploads/sites/6/2019/09/Twitter.jpg?w=1500&quality=82&strip=all&ssl=1",
         role: "Developer",
         link:"https://github.com/lokim99/TwitterClone",
-        disc : "I have developed twitter clone in erlang and implemented functionalities like Register, Login, Tweet, Subscribe, Retweet, My mentions, Hashtag Search, Logout and Optimized its performance using the principles of Distributed Operating Systems and Concurrency."
+        disc : "Developed twitter clone in erlang and implemented functionalities like Register, Login, Tweet, Subscribe, Retweet, My mentions, Hashtag Search, Logout and Optimized its performance."
 
     },
     {
         img : "https://miro.medium.com/v2/resize:fit:828/format:webp/1*cG6U1qstYDijh9bPL42e-Q.jpeg",
         role: "Developer",
         link:"/",
-        disc : "Developed Code by pre-processed huge amounts of data using NLP, classified data into nine different categories, trained four Machine Learning Algorithms and compared the Probability of Cancer prediction using classification metric called Logarithmic loss."
+        disc : "Developed Code by processing huge dataset using NLP, classified data into nine different categories, trained five ML Algorithms, predicted the Probability of Cancer prediction in terms of Logarithmic loss."
     }
 ];
 
@@ -52,7 +52,6 @@ var settings = {
     initialSlide: 0,
     arrows : false,
     autoplay: true,
-    infinite: true,
     responsive: [
       {
         breakpoint: 990,

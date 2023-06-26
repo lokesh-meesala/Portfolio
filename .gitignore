@@ -2,8 +2,12 @@
 
 # dependencies
 /node_modules
+/Lib
+/Scripts
 /.pnp
 .pnp.js
+/src/Lib
+/src/Scripts
 
 # testing
 /coverage

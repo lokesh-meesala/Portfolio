@@ -5,11 +5,12 @@ const Project = (props) => {
     const {link,role, disc,img } = props.item;
   return (
     <Container className='project'>
+        
         <img src={img} alt="project" />
-        <div className="disc">
-        {/* <div className='role'> */}
+        <div className='role'>
             <h3>{role}</h3>
-        {/* </div> */}
+        </div>
+        <div className="disc">
             <p>{disc}
             <a href={link} target="_blank">Demo</a>
             </p>
@@ -56,9 +57,9 @@ const Container = styled.div`
         }
         p{
             width: 100%;
-            font-size: 0.8rem;
+            font-size: 0.6rem;
             a{
-                margin-left: 10px;
+                margin-left: 5px;
                 color: red;
             }
         }
@@ -66,10 +67,10 @@ const Container = styled.div`
 
     .role{
         position:absolute;  
-        // bottom: -10rem;
+        bottom: -10rem;
         text-align: left;
         padding: 0.5rem;
-        background: linear-gradient(rgba(0,0,0, 0.100), rgba(0,0,0, 0.70));
+        
         transition: all 400ms ease-in-out;
         h1{
             font-size: 1.2rem;

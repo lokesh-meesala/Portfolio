@@ -15,6 +15,7 @@ const ProfComponent = () => {
             Hello
           </h2>
           <h1 className="green">I'am Lokesh Meesala</h1>
+          {/* <h4>Currently looking for roles</h4> */}
           <Text/>
           <a href="https://drive.google.com/file/d/1qqYl8Au5-mDAWIChkj8ugOLWZXTRXuYN/view?usp=share_link" target="blank">
           <button>Resume</button>
@@ -23,8 +24,8 @@ const ProfComponent = () => {
             <p>Check out my</p>
             <div className="social-icons">
               <span>
-                <a href="/" target="blank">
-                  <AiOutlineInstagram />
+                <a href="https://www.linkedin.com/in/lokeshmeesala/" target="blank">
+                  <AiFillLinkedin />
                 </a>
               </span>
               <span>
@@ -33,15 +34,15 @@ const ProfComponent = () => {
                 </a>
               </span>
               <span>
-                <a href="https://www.linkedin.com/in/lokeshmeesala/" target="blank">
-                  <AiFillLinkedin />
+                <a href="https://instagram.com/lokesh_meesala?igshid=MzRlODBiNWFlZA==" target="blank">
+                  <AiOutlineInstagram />
                 </a>
               </span>
             </div>
           </Social>
         </Texts>
       </Slide>
-      <Slide direction="right">
+      <Slide direction="left">
         <Profile>
           <img
             src={profilephoto} 
@@ -145,10 +146,9 @@ const Social = styled.div`
 `;
 const Profile = styled.div`
   img {
-    padding-left: 400px;
-    position: relative;
-    // width: 399px;
-    height: 401px;
+    padding-left: 100px;
+    display:flex;
+    height: 400px;
         
     filter: drop-shadow(0px 10px 10px #01be9570);
     transition: transform 400ms ease-in-out;

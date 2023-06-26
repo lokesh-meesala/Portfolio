@@ -8,7 +8,7 @@ function Text() {
         strings: [
           "Software Engineer",
           "Full Stack Web Developer",
-          "Python Developer"
+          "Python Developer",
         ],
         autoStart: true,
         loop: true,

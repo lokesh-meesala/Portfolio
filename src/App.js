@@ -14,12 +14,14 @@ function App() {
         <ProfComponent />
       </Banner>
       <Services />
-      <LightColor><Skills/></LightColor>
+      <LightColor>
+        <Skills />
+      </LightColor>
       <Projects />
       <LightColor>
-      <Experience />
+        <Experience />
       </LightColor>
-        <Footer />
+      <Footer />
     </Container>
   );
 }

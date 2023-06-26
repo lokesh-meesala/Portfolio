@@ -89,13 +89,6 @@ I’ll try my best to get back to you!</p>
           <div className="icons">
             <Zoom>
               <span>
-                <a href="https://github.com/lokim99?tab=repositories" target="blank">
-                  <AiFillGithub />
-                </a>
-              </span>
-            </Zoom>
-            <Zoom>
-              <span>
                 <a href="https://www.linkedin.com/in/lokeshmeesala/" target="blank">
                   <AiFillLinkedin />
                 </a>
@@ -103,7 +96,14 @@ I’ll try my best to get back to you!</p>
             </Zoom>
             <Zoom>
               <span>
-                <a href="/" target="blank">
+                <a href="https://github.com/lokim99?tab=repositories" target="blank">
+                  <AiFillGithub />
+                </a>
+              </span>
+            </Zoom>
+            <Zoom>
+              <span>
+                <a href="https://instagram.com/lokesh_meesala?igshid=MzRlODBiNWFlZA==" target="blank">
                   <BsInstagram />
                 </a>
               </span>

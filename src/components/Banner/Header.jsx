@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components';
 import { GiCandleFlame } from "react-icons/gi";
+import logo from './logosample.png'
 
 
 const Header = () => {
@@ -8,14 +9,14 @@ const Header = () => {
   return (
     <Container bar={bar}>
         <Logo className='bar'>
-            
-            <span className='green'><a href="#home"><h1>Lokesh Meesala</h1></a></span>
+            <a href="#home"><img src={logo} alt={logo} /></a>
+            <a href="#home"><h1>Lokesh Meesala</h1></a>
             
         </Logo>
         <Nav bar={bar}>
             <span><a href="#home">Home</a></span>
             <span><a href="#about">About</a></span>
-            <span><a href="#skills">Skills</a></span>
+            <span><a href="#Skills">Skills</a></span>
             <span><a href="#project">Projects</a></span>
             <span><a href="#workexp">Work Experience</a></span>
             <span><a href="#footer">Contact</a></span>
