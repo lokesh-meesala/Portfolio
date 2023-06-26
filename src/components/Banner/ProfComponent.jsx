@@ -4,21 +4,22 @@ import { AiOutlineInstagram } from "react-icons/ai";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { Slide } from "react-awesome-reveal";
 import Text from "./Text";
-import profilephoto from './IMG-3451.jpg'
+import profilephoto from './img1.svg'
+
 
 const ProfComponent = () => {
   return (
     <Container id="home">
+      <Row>
       <Slide direction="left">
         <Texts>
           <h2>
             Hello
           </h2>
-          <h1 className="green">I'am Lokesh Meesala</h1>
-          {/* <h4>Currently looking for roles</h4> */}
+          <h1 className="green">I am Lokesh Meesala</h1>
           <Text/>
           <a href="https://drive.google.com/file/d/1qqYl8Au5-mDAWIChkj8ugOLWZXTRXuYN/view?usp=share_link" target="blank">
-          <button>Resume</button>
+            <button>Resume</button>
           </a>
           <Social>
             <p>Check out my</p>
@@ -50,6 +51,7 @@ const ProfComponent = () => {
           />
         </Profile>
       </Slide>
+      </Row>
     </Container>
   );
 };
@@ -73,6 +75,10 @@ const Container = styled.div`
 `;
 const Texts = styled.div`
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   h4 {
     padding: 1rem 0;
     font-weight: 500;
@@ -90,7 +96,6 @@ const Texts = styled.div`
   }
   p {
     font-weight: 300;
-    
   }
 
   button {
@@ -145,11 +150,12 @@ const Social = styled.div`
   }
 `;
 const Profile = styled.div`
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   img {
-    padding-left: 100px;
-    display:flex;
     height: 400px;
-        
     filter: drop-shadow(0px 10px 10px #01be9570);
     transition: transform 400ms ease-in-out;
     @media (max-width: 790px) {
@@ -158,7 +164,6 @@ const Profile = styled.div`
     @media (max-width: 660px) {
       width: 18rem;
     }
-
     @media (max-width: 640px) {
       width: 100%;
     }
@@ -166,5 +171,20 @@ const Profile = styled.div`
 
   :hover img {
     transform: translateY(-10px);
+  }
+`;
+const Row = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  width: 100%;  
+  @media (max-width: 700px) {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  @media (max-width: 400px) {
+    flex-direction: column;
+    gap: 2rem;
   }
 `;
