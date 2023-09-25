@@ -5,6 +5,7 @@ import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { Slide } from "react-awesome-reveal";
 import Text from "./Text";
 import profilephoto from './img1.svg'
+import { TbBrandLeetcode } from "react-icons/tb";
 
 
 const ProfComponent = () => {
@@ -30,13 +31,18 @@ const ProfComponent = () => {
                 </a>
               </span>
               <span>
-                <a href="https://github.com/lokim99?tab=repositories" target="blank">
+                <a href="https://github.com/lokesh-meesala?tab=repositories" target="blank">
                   <AiFillGithub />
                 </a>
               </span>
               <span>
                 <a href="https://instagram.com/lokesh_meesala?igshid=MzRlODBiNWFlZA==" target="blank">
                   <AiOutlineInstagram />
+                </a>
+              </span>
+              <span>
+                <a href="https://leetcode.com/LokeshMeesala/" target="blank">
+                  <TbBrandLeetcode />
                 </a>
               </span>
             </div>

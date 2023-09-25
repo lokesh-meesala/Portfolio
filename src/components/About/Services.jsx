@@ -2,7 +2,6 @@ import React from "react";
 import { MdDesignServices } from "react-icons/md";
 import { FiCodesandbox } from "react-icons/fi";
 import { CgWebsite } from "react-icons/cg";
-import {FcLinux} from "react-icons/fc";
 import styled from "styled-components";
 import Card from "./Card";
 import { Slide } from "react-awesome-reveal";
@@ -11,12 +10,23 @@ const Services = () => {
   return (
     <Container id="about">
       <Slide direction="down">
-        <h4><span className="green">About</span>
-        <h4 style={{fontFamily:"Calibri",marginTop:"10px",lineHeight:"1.5"}}>
+        <h4>
+        <h2><span className="green">About</span></h2>
+          <h4 style={{fontFamily:"Calibri",marginTop:"10px",lineHeight:"1.5"}}>
 
-        I am a skilled Developer with a strong educational background in Computer Science. My technical skills include programming languages such as C, C++, Java, Python, and Go, as well as databases like MySQL, MongoDB, and Oracle. I have experience working as Full stack developer with various frameworks and tools such as Django, Flask, Python, React, Node.js, and Git. My professional experience includes working as a Python Developer for Virtual Review Assist and as a Software Engineer at Wipro Technologies. I have also worked on several projects, including Kora, Courage to Change, Cancer Prediction using Machine Learning, Bitcoin Miner and Twitter Clone. Overall, I am a versatile and passionate developer with a proven track record of delivering high-quality work. </h4>
+              I'm a computer science professional with a Master's degree in Computer Science from the University of Florida. My journey in technology has equipped me with a diverse skill set, encompassing programming languages such as C++, .Net, Java, Python, GO, and more. I'm well-versed in various tools and frameworks, including databases like MySQL and MongoDB, and I have experience with Docker, Git, AWS, and more.
+
+              Throughout my career, I've contributed to impactful projects, from developing Web applications, Java Interfaces, Testing, REST APIs and integrating Chatbots to automating complex processes using image processing and machine learning. I'm driven by a passion for innovation and problem-solving, and I'm dedicated to staying at the forefront of technology. Explore my portfolio to discover my journey and the projects that reflect my expertise in the world of computer science. 
+            </h4>
+
+          <h3 style={{marginTop:"10px"}}><span className="green">My Mission</span></h3>
+            <h4 style={{fontFamily:"Calibri",marginTop:"10px",lineHeight:"1.5"}}>
+
+              My mission is to bridge the gap between cutting-edge technology and practical solutions. I thrive on tackling complex challenges and leveraging technology to make a meaningful impact. Whether it's building scalable web applications, designing secure systems, or harnessing the power of machine learning for data analysis, I'm committed to pushing the boundaries of what's possible in the tech world. Thank you for visiting my portfolio, and I invite you to explore my projects and achievements to gain insight into my journey and vision for the future of technology. 
+           </h4>
+         
         </h4>
-        <h1>What I Do</h1>
+        <h1 style={{marginTop:"10px"}}><span className="green" >What I Do</span></h1>
       </Slide>
       <Cards>
         <Slide direction="left">

@@ -7,6 +7,7 @@ import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
 import { BsFacebook, BsInstagram, BsSlack } from "react-icons/bs";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
 import { Slide, Zoom, Fade } from "react-awesome-reveal";
+import { TbBrandLeetcode } from "react-icons/tb";
 import { useState  } from 'react';
 import { Form, Alert} from 'react-bootstrap';
 import emailjs from '@emailjs/browser';
@@ -96,7 +97,7 @@ I’ll try my best to get back to you!</p>
             </Zoom>
             <Zoom>
               <span>
-                <a href="https://github.com/lokim99?tab=repositories" target="blank">
+                <a href="https://github.com/lokesh-meesala?tab=repositories" target="blank">
                   <AiFillGithub />
                 </a>
               </span>
@@ -105,6 +106,13 @@ I’ll try my best to get back to you!</p>
               <span>
                 <a href="https://instagram.com/lokesh_meesala?igshid=MzRlODBiNWFlZA==" target="blank">
                   <BsInstagram />
+                </a>
+              </span>
+            </Zoom>
+            <Zoom>
+              <span>
+                <a href="https://leetcode.com/LokeshMeesala/" target="blank">
+                  <TbBrandLeetcode />
                 </a>
               </span>
             </Zoom>

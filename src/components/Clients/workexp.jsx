@@ -44,8 +44,8 @@ const Experience = () => (
                 <h3 className="vertical-timeline-element-title" style={{color:"white", fontFamily:"serif"}}>Graduate Student Assistant - Backend Developer</h3>
                 <h3 className="vertical-timeline-element-subtitle" style={{color:"white", fontFamily:"calibri"}}>Virtual Review Assist Inc</h3>
                 <ul>
-                  <li style={{paddingTop: "5px",fontFamily:"Calibri", color:"black"}}>Developed 20+ REST APIs in python using MongoDB as database</li>
-                  <li style={{fontFamily:"Calibri", color:"black"}}>Seamlessly integrated all the developed APIs into Djano</li>
+                  <li style={{paddingTop: "5px",fontFamily:"Calibri", color:"black"}}>Developed 20+ REST APIs in python using MongoDB and Django.</li>
+                  <li style={{fontFamily:"Calibri", color:"black"}}>Seamlessly integrated all the developed APIs into C# code</li>
                   <li style={{fontFamily:"Calibri", color:"black"}}>Developed and Trained Chatbot for handling common questions that are related to Florida Building Resident Codes</li>
                 </ul>
             </VerticalTimelineElement>
@@ -89,6 +89,7 @@ const Experience = () => (
                   <li style={{fontFamily:"Calibri", color:"black"}}>Resolved 90+ issues, Service requests, Incidents, Performed Root cause analysis on critical issues which includes three P1-tickets.</li>
                   <li style={{fontFamily:"Calibri", color:"black"}}>Maintenance of Production, Development and Quality Environments.</li>
                   <li style={{fontFamily:"Calibri", color:"black"}}>Enhanced the resolution times by 40% by implementing the idea of Continuous Monitoring and Contributed to Server Migrations by testing 120+ Interfaces each time and resolving errors.</li>
+                  <li style={{fontFamily:"Calibri", color:"black"}}>Utilized diverse adapters such as JDBC, FTP, SOAP, IDoc, RFC, and HTTP for connections between interfaces.</li>
                   <li style={{fontFamily:"Calibri", color:"black"}}>Trained in Informatica, PL/SQL, SAP BO during training period at Wipro.</li>
                 </ul>
             </VerticalTimelineElement>

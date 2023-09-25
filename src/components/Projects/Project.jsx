@@ -1,10 +1,14 @@
 import React from 'react'
 import styled from 'styled-components';
 
+
 const Project = (props) => {
     const {link,role, disc,img } = props.item;
+    const handleClick = () => {
+        window.open(link, '_blank'); // Open the link in a new tab
+      };
   return (
-    <Container className='project'>
+    <Container className='project' onClick={handleClick}>
         
         <img src={img} alt="project" />
         <div className='role'>
@@ -12,7 +16,9 @@ const Project = (props) => {
         </div>
         <div className="disc">
             <p>{disc}
-            <a href={link} target="_blank">Demo</a>
+            {/* <Button variant="contained" color='secondary' href={link} sx={{ width: "2px", height: "0.5px", fontSize:"4rem", marginLeft:"5px"}} target="_blank">
+                Demo
+            </Button> */}
             </p>
         </div>
     </Container>
@@ -59,8 +65,9 @@ const Container = styled.div`
             width: 100%;
             font-size: 0.6rem;
             a{
-                margin-left: 5px;
-                color: red;
+                font-size:0.2rem;
+                margin-left: 1px;
+                
             }
         }
     }
